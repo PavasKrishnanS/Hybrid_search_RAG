@@ -37,14 +37,14 @@ HYBRID_SEARCH_RAG/
     ```
 
 2.  **Add PDFs**
-    Place your PDF files into the `data/` folder.
+    Place  PDF files into the `data/` folder.
 
 3.  **Run Ollama Locally**
 
       * Download and install Ollama: [https://ollama.com/download](https://ollama.com/download)
       * Launch a language model from your terminal (e.g., Gemma 3):
         ```bash
-        ollama run gemma3
+        ollama run gemma3:latest
         ```
 
 4.  **Start the Chatbot**
@@ -81,5 +81,6 @@ HYBRID_SEARCH_RAG/
 3.  **Rerank**: All results from the hybrid search are passed through a **cross-encoder model**. This model reranks the results based on their relevance to the original query, ensuring that only the most useful information proceeds to the next step.
 
 4.  **LLM Q\&A**: The top-ranked results are bundled as context and passed to the local Ollama LLM. The LLM generates an answer based *only* on this context, reducing the likelihood of hallucinations. The source of each piece of information is cited and displayed in the chatbot's UI.
+
 
 
