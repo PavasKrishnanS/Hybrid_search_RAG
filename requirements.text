@@ -1,0 +1,9 @@
+chromadb
+sentence-transformers
+cross-encoder
+rank-bm25
+pdfplumber
+streamlit
+duckduckgo-search
+requests
+numpy
