@@ -2,7 +2,8 @@
 
 A Streamlit-based RAG (Retrieval Augmented Generation) chatbot that answers questions using your local PDFs and live web search. It combines vector search, BM25, DuckDuckGo, and cross-encoder reranking for high-quality, cited answers. The chatbot is powered by your local Ollama LLM.
 
-\<br\>
+<img width="1949" height="929" alt="image" src="https://github.com/user-attachments/assets/65bf71db-d8d1-4685-b415-be266cb5a298" />
+
 
 ## 🚀 Features
 
@@ -80,4 +81,5 @@ HYBRID_SEARCH_RAG/
 3.  **Rerank**: All results from the hybrid search are passed through a **cross-encoder model**. This model reranks the results based on their relevance to the original query, ensuring that only the most useful information proceeds to the next step.
 
 4.  **LLM Q\&A**: The top-ranked results are bundled as context and passed to the local Ollama LLM. The LLM generates an answer based *only* on this context, reducing the likelihood of hallucinations. The source of each piece of information is cited and displayed in the chatbot's UI.
+
 
